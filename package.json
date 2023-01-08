@@ -1,0 +1,22 @@
+{
+  "name": "spiritory-interview-task",
+  "version": "1.0.0",
+  "description": "Backend (Node.js, Express.js) Developer Interview Task Spiritory",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SeifeddineBS/Spiritory-interview-task.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SeifeddineBS/Spiritory-interview-task/issues"
+  },
+  "homepage": "https://github.com/SeifeddineBS/Spiritory-interview-task#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
