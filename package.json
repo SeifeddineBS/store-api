@@ -4,7 +4,7 @@
   "description": "Backend (Node.js, Express.js) Developer Interview Task Spiritory",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon index.js"
   },
   "repository": {
     "type": "git",
@@ -21,6 +21,7 @@
     "dotenv": "^16.0.3",
     "express": "^4.18.2",
     "fs": "^0.0.1-security",
-    "id-auto-increment": "^1.0.1"
+    "id-auto-increment": "^1.0.1",
+    "nodemon": "^2.0.20"
   }
 }
