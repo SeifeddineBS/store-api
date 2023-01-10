@@ -24,8 +24,6 @@ exports.login = async (req, res) => {
     if (!passwordMatch) {
       res.status(400).send({ message: "Password incorrect" });
     } else {
-      console.log(user.id);
-      console.log(user.email);
       const token = jwt.sign(
         { _id: user.id, email: user.email },
         process.env.TOKEN_SECRET,
