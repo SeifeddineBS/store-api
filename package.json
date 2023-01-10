@@ -17,6 +17,10 @@
   },
   "homepage": "https://github.com/SeifeddineBS/Spiritory-interview-task#readme",
   "dependencies": {
-    "express": "^4.18.2"
+    "bcrypt": "^5.1.0",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "fs": "^0.0.1-security",
+    "id-auto-increment": "^1.0.1"
   }
 }
