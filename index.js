@@ -4,6 +4,7 @@ const dotenv = require("dotenv");
 
 //Routes
 const userRouter = require("./routes/userRouter");
+const loginRouter = require("./routes/loginRouter");
 
 dotenv.config();
 
@@ -16,3 +17,4 @@ app.use(express.json());
 
 // Route Middlewares
 app.use("/api/users", userRouter);
+app.use("/api/login", loginRouter);
