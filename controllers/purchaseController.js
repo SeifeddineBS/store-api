@@ -1,28 +1,27 @@
 const fs = require("fs");
-const usersFile = fs.readFileSync("database/users.json");
-const itemsFile = fs.readFileSync("database/items.json");
-const purchasesFile = fs.readFileSync("database/purchases.json");
-const purchaseItemsFile = fs.readFileSync("database/purchaseItems.json");
-const users = JSON.parse(usersFile.toString());
-const items = JSON.parse(itemsFile.toString());
-const purchases = JSON.parse(purchasesFile.toString());
-const purchaseItems = JSON.parse(purchaseItemsFile.toString());
-
-const getItemById = (id) => {
-  for (let item of items) {
-    if (item.id === id) return item;
-  }
-};
-const getUserById = (id) => {
-  for (let user of users) {
-    if (user.id === id) return user;
-  }
-};
 
 exports.getPurchaseByUser = (req, res) => {
+  const usersFile = fs.readFileSync("database/users.json");
+  const itemsFile = fs.readFileSync("database/items.json");
+  const purchasesFile = fs.readFileSync("database/purchases.json");
+  const purchaseItemsFile = fs.readFileSync("database/purchaseItems.json");
+  const users = JSON.parse(usersFile.toString());
+  const items = JSON.parse(itemsFile.toString());
+  const purchases = JSON.parse(purchasesFile.toString());
+  const purchaseItems = JSON.parse(purchaseItemsFile.toString());
   const userId = req.params.userId;
-  const user = getUserById(userId);
   var userPurchases = [];
+  const getItemById = (id) => {
+    for (let item of items) {
+      if (item.id === id) return item;
+    }
+  };
+  const getUserById = (id) => {
+    for (let user of users) {
+      if (user.id === id) return user;
+    }
+  };
+  const user = getUserById(userId);
 
   for (let user of users) {
     var exist = user.id === userId ? true : false;

@@ -6,6 +6,7 @@ const dotenv = require("dotenv");
 const userRouter = require("./routes/userRouter");
 const loginRouter = require("./routes/loginRouter");
 const purchaseRouter = require("./routes/purchaseRouter");
+const createDatabase = require("./database/createDatabase");
 
 dotenv.config();
 
@@ -20,3 +21,8 @@ app.use(express.json());
 app.use("/api/users", userRouter);
 app.use("/api", loginRouter);
 app.use("/api/purchases", purchaseRouter);
+
+// create database if it doesnt exist
+createDatabase();
+
+//check if file exist

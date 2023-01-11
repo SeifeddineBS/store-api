@@ -12,12 +12,6 @@ exports.create = async (req, res) => {
     return;
   }
 
-  //check if file exist
-  if (!fs.existsSync(fileName)) {
-    //create new file if not exist
-    fs.closeSync(fs.openSync(fileName, "w"));
-  }
-
   // read file
   var user = new User();
 
@@ -37,9 +31,8 @@ exports.create = async (req, res) => {
   if (file.length === 0) {
     //add data to json file
     fs.writeFileSync(fileName, JSON.stringify([user]));
-    res
-      .status(201)
-      .send({ message: "File created and User added successfully" });
+    res.status(201);
+    res.status(201).send({ message: "User added successfully " });
   } else {
     //append data to jso file
     const users = JSON.parse(file.toString());
