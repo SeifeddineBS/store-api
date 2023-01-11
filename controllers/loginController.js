@@ -8,8 +8,8 @@ exports.login = async (req, res) => {
   const email = req.body.email;
   const password = req.body.password;
 
-  const json = JSON.parse(file.toString());
-  for (let element of json) {
+  const users = JSON.parse(file.toString());
+  for (let element of users) {
     var exist = element.email === email ? true : false;
 
     if (exist) {

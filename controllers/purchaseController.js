@@ -8,11 +8,6 @@ const items = JSON.parse(itemsFile.toString());
 const purchases = JSON.parse(purchasesFile.toString());
 const purchaseItems = JSON.parse(purchaseItemsFile.toString());
 
-const getPurchaseById = (id) => {
-  for (let purchase of purchases) {
-    if (purchase.id === id) return purchase;
-  }
-};
 const getItemById = (id) => {
   for (let item of items) {
     if (item.id === id) return item;
@@ -37,12 +32,14 @@ exports.getPurchaseByUser = (req, res) => {
     }
   }
   if (!exist) {
-    res.status(404).send({ res: "User not found " });
+    res.status(404).send({ res: "User not found " }); // user given not found
     return;
   } else {
     var i = 1;
     for (let purchase of purchases) {
+      // get all purchases
       if (purchase.userId === userId) {
+        // get user's purchases
         var userPurchase = {};
         userPurchase.order = i;
         userPurchase.id = purchase.id;
@@ -52,7 +49,9 @@ exports.getPurchaseByUser = (req, res) => {
 
         userPurchase.items = [];
         for (let purchaseItem of purchaseItems) {
+          // get all purchasesItem
           if (purchaseItem.purchaseId === purchase.id) {
+            //get all user'spurchasesItem
             let item = getItemById(purchaseItem.itemId);
             console.log(purchaseItem.itemId);
             let userItem = {
@@ -72,21 +71,3 @@ exports.getPurchaseByUser = (req, res) => {
     res.status(200).send({ Purchases: userPurchases });
   }
 };
-
-// for (let purchaseItem of purchaseItems) {
-//   let purchase = getPurchaseById(purchaseItem.purchaseId);
-//   console.log("first :" + purchaseItem.purchaseId);
-//   console.log("second :" + purchase.id);
-
-//   if (purchase.userId === userId) {
-//     let user = getUserById(userId);
-//     userPurchase.id = purchase.id;
-
-//     userPurchase.userId = userId;
-//     userPurchase.data = purchase.date;
-//     userPurchase.userName = user.name + " " + user.lastName;
-//     userPurchase.totalPurchasePrice = purchase.totalPurchasePrice;
-//     userPurchases.push(userPurchase);
-//   }
-// }
-// res.status(200).send({ Purchases: userPurchases });

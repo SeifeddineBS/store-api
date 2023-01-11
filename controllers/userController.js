@@ -42,8 +42,8 @@ exports.create = async (req, res) => {
       .send({ message: "File created and User added successfully" });
   } else {
     //append data to jso file
-    const json = JSON.parse(file.toString());
-    for (let element of json) {
+    const users = JSON.parse(file.toString());
+    for (let element of users) {
       var exist = element.email === user.email ? true : false;
 
       if (exist) {
@@ -54,9 +54,29 @@ exports.create = async (req, res) => {
     //add json element to json object
     if (exist) res.status(400).send({ res: "email exisit already" });
     else {
-      json.push(user);
-      fs.writeFileSync(fileName, JSON.stringify(json));
+      users.push(user);
+      fs.writeFileSync(fileName, JSON.stringify(users));
       res.status(201).send({ message: "User added successfully " });
     }
+  }
+};
+exports.getUserByid = async (req, res) => {
+  const userId = req.params.id;
+
+  const fileName = "database/users.json";
+  const file = fs.readFileSync(fileName);
+  const users = JSON.parse(file.toString());
+
+  for (let element of users) {
+    if (element.id === userId) {
+      var user = element;
+      break;
+    }
+  }
+
+  //add json element to json object
+  if (user) res.status(400).send({ User: user });
+  else {
+    res.status(201).send({ message: "User not found" });
   }
 };
