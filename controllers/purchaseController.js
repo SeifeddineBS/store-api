@@ -52,7 +52,6 @@ exports.getPurchaseByUser = (req, res) => {
           if (purchaseItem.purchaseId === purchase.id) {
             //get all user'spurchasesItem
             let item = getItemById(purchaseItem.itemId);
-            console.log(purchaseItem.itemId);
             let userItem = {
               name: item.name,
               quantity: purchaseItem.quantity,

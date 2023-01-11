@@ -12,12 +12,10 @@ exports.create = async (req, res) => {
     return;
   }
 
-  // read file
   var user = new User();
-
   user = req.body;
-  // auto increment id
 
+  // auto increment id
   user.id = await idAutoIncrement(); // await syntax
 
   // hashed password
@@ -29,12 +27,10 @@ exports.create = async (req, res) => {
 
   //check if file is empty
   if (file.length === 0) {
-    //add data to json file
     fs.writeFileSync(fileName, JSON.stringify([user]));
     res.status(201);
     res.status(201).send({ message: "User added successfully " });
   } else {
-    //append data to jso file
     const users = JSON.parse(file.toString());
     for (let element of users) {
       var exist = element.email === user.email ? true : false;
@@ -44,8 +40,7 @@ exports.create = async (req, res) => {
       }
     }
 
-    //add json element to json object
-    if (exist) res.status(400).send({ res: "email exisit already" });
+    if (exist) res.status(400).send({ res: "email already exisit " });
     else {
       users.push(user);
       fs.writeFileSync(fileName, JSON.stringify(users));
