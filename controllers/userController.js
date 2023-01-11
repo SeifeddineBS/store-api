@@ -4,7 +4,7 @@ const bcrypt = require("bcrypt");
 const User = require("../models/User");
 
 exports.create = async (req, res) => {
-  const fileName = "users.json";
+  const fileName = "database/users.json";
   const file = fs.readFileSync(fileName);
 
   if (!req.body) {

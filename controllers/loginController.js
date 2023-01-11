@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 
 exports.login = async (req, res) => {
-  const fileName = "users.json";
+  const fileName = "database/users.json";
   const file = fs.readFileSync(fileName);
   const email = req.body.email;
   const password = req.body.password;
