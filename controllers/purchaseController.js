@@ -46,7 +46,7 @@ exports.getPurchaseByUser = (req, res) => {
         userPurchase.userName = user.name + " " + user.lastName;
         userPurchase.total = purchase.totalPurchasePrice;
 
-        userPurchase.items = [];
+        userPurchase.purchaseItems = [];
         for (let purchaseItem of purchaseItems) {
           // get all purchasesItem
           if (purchaseItem.purchaseId === purchase.id) {
@@ -58,7 +58,7 @@ exports.getPurchaseByUser = (req, res) => {
               price: purchaseItem.price,
               totalPurchaseItemPrice: purchaseItem.totalPurchaseItemPrice,
             };
-            userPurchase.items.push(userItem);
+            userPurchase.purchaseItems.push(userItem);
           }
         }
 
