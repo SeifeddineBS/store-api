@@ -3,7 +3,7 @@
     "email": "seifebensalah@gmail.com",
     "name": "seifeddine",
     "lastName": "Ben Salah",
-    "birthday": "11.11.1999",
+    "birthday": "11-11-1999",
     "password": "$2b$10$SgfYCh2aPzRXP8xxPIOGkug.tHCL81dicEFwbpsSSRca1I070jFiG",
     "id": "1524102119783783168",
     "created_at": "2023-01-11T10:35:23.701Z"
@@ -12,7 +12,7 @@
     "email": "mohamedali@gmail.com",
     "name": "mohamed",
     "lastName": "ali",
-    "birthday": "12.06.2002",
+    "birthday": "12-06-2002",
     "password": "$2b$10$2vgkBEgiuBZDK7CARyXUneUYl3dnEJ9vS7MxBFJAZwtuGtwaF.dl2",
     "id": "1524102203263026432",
     "created_at": "2023-01-11T10:36:03.513Z"
@@ -21,7 +21,7 @@
     "email": "aminabenammar@gmail.com",
     "name": "amina",
     "lastName": "ben ammar",
-    "birthday": "09.10.1990",
+    "birthday": "09-10-1990",
     "password": "$2b$10$1qTP6ErT0dGgH0IyhelYeeMrWcUEDI3nO/jIGy6wQpHbLGNxpg48W",
     "id": "1524102299880927488",
     "created_at": "2023-01-11T10:36:49.576Z"
@@ -30,7 +30,7 @@
     "email": "morsiderbel@gmail.com",
     "name": "morsi",
     "lastName": "derbel",
-    "birthday": "31.12.1992",
+    "birthday": "31-12-1992",
     "password": "$2b$10$bRdIJy/fMp.yNRMma3aY2uY2/TVBPSUAGtv4EY5yj2hpaANJW9PvO",
     "id": "1524102338422404352",
     "created_at": "2023-01-11T10:37:07.958Z"
@@ -39,18 +39,9 @@
     "email": "aymenjbara@gmail.com",
     "name": "aymen",
     "lastName": "jbara",
-    "birthday": "12.06.2000",
+    "birthday": "12-06-2000",
     "password": "$2b$10$e7VaEIOCHFEVK7z53qWnZ.2/liA2X51pzgsUviNhDY/fBhv7uheFy",
     "id": "1524102450158673152",
     "created_at": "2023-01-11T10:38:01.237Z"
-  },
-  {
-    "email": "string",
-    "name": "string",
-    "lastName": "string",
-    "birthday": "string",
-    "password": "$2b$10$MobOXgHwKyqUl/vjPyff8e7yuM2OyEZ5ElTDDQD3iqsgE6hd49lPq",
-    "id": "1524121846566587904",
-    "created_at": "2023-01-11T13:12:10.176Z"
   }
 ]

@@ -2,32 +2,32 @@
   {
     "id": "57777d3c",
     "date": "2023-01-11 10:43:21",
-    "totalPurchasePrice": 1120,
+    "totalPurchasePrice": 1120.00,
     "userId": "1524102119783783168"
   },
   {
     "id": "65ea56c8",
     "date": "2023-01-07 19:23:20",
-    "totalPurchasePrice": 900,
+    "totalPurchasePrice": 900.00,
     "userId": "1524102119783783168"
   },
 
   {
     "id": "73cff3e2",
     "date": "2023-01-06 09:12:04",
-    "totalPurchasePrice": 820,
+    "totalPurchasePrice": 820.00,
     "userId": "1524102299880927488"
   },
   {
     "id": "6ca287b0",
     "date": "2022-12-24 15:33:32",
-    "totalPurchasePrice": 200,
+    "totalPurchasePrice": 200.00,
     "userId": "1524102119783783168"
   },
   {
     "id": "7ab376de",
     "date": "2022-12-01 16:22:10",
-    "totalPurchasePrice": 460,
+    "totalPurchasePrice": 460.00,
     "userId": "1524102299880927488"
   }
 ]

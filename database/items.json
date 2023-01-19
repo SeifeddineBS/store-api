@@ -4,62 +4,62 @@
     "name": "Canadian Club Whisky",
     "description": "Claiming to be the only Canadian whisky that’s blended before aging in white oak barrels, Canadian Club, owned by Beam Suntory, gets its flavor from rye, rye malt, and barley malt atop a base whisky made with corn.",
     "dateAdded": "2023-01-11 12:43:21",
-    "price": 120
+    "price": 120.0
   },
   {
     "id": "61c81610",
     "name": "Buchanan’s Scotch Whisky",
     "description": "Popular in the States as well as Latin America, Buchanan’s 12 Year is noted for its honey toast, spice, and fruit flavors.",
     "dateAdded": "2022-12-11 10:13:21",
-    "price": 220
+    "price": 220.0
   },
   {
     "id": "6697890a",
     "name": "Knob Creek Bourbon Whiskey",
     "description": "Launched in 1992, Knob Creek is a relative newcomer to the American whiskey scene. The Kentucky-based brand was one of the first premium small-batch whiskeys on the market and has since become in-demand among collectors and aficionados.",
     "dateAdded": "2022-12-10 10:43:21",
-    "price": 50
+    "price": 50.0
   },
   {
     "id": "6aa7ac78",
     "name": "Four Roses Bourbon",
     "description": "Though Four Roses bourbon was taken off the American market at the end of the 1950s, it returned with vigor in 2002. With four Kentucky whiskeys now on its permanent roster, Four Roses is known for its masterful blends and highly sought-after limited releases.",
     "dateAdded": "2022-12-10 09:43:21",
-    "price": 310
+    "price": 310.0
   },
   {
     "id": "6e427de0",
     "name": "The Glenlivet Scotch Whisky",
     "description": "Always on the shortlist for best Scotch whiskies in the world, The Glenlivet is known for its long-aged spirits. Despite not making it on last year’s top 20 list, The Glenlivet sits firmly at no. 16 for 2022",
     "dateAdded": "2022-12-10 08:23:21",
-    "price": 205
+    "price": 205.0
   },
   {
     "id": "7308ea62",
     "name": "Southern Comfort American Whisky",
     "description": "For many years, Southern Comfort was a flavored liqueur with nary a trace of whiskey. It’s come a long way since Sazerac bought the brand from Brown-Forman in 2016. Today, the whiskey-based liqueur is still flavored with fruit and spice, but has a little more street cred.",
     "dateAdded": "2022-11-10 08:33:21",
-    "price": 200
+    "price": 200.0
   },
   {
     "id": "76f3e2e4",
     "name": "Jack Daniel’s Tennessee Whiskey",
     "description": "It’s safe to say most people know Jack. It takes the bronze medal on this year’s list, with $393,540,865 in sales. The Brown-Forman brand is not only the third most popular whiskey in America, but it’s also one of the best-selling American whiskey brands in the world.",
     "dateAdded": "2022-11-10 11:43:31",
-    "price": 150
+    "price": 150.0
   },
   {
     "id": "7fdbbc2e",
     "name": "Fireball Cinnamon Whisky",
     "description": "Despite the fact that Fireball is not technically whiskey, and despite being recalled in Europe in 2014 for an antifreeze-adjacent ingredient scare, Fireball is burned into the top five as the No. 2 whisky in America.",
     "dateAdded": "2022-11-10 13:43:51",
-    "price": 100
+    "price": 100.0
   },
   {
     "id": "84330f66",
     "name": "Crown Royal Canadian Whisky",
     "description": "As the name (and its slogan) suggest, Crown Royal is “fit for a king” — and was made for one. The flagship brand, Crown Royal Deluxe, was created in honor of King George VI. Its sales still rule, with $460,171,371 worth of Crown Royal sold last year.",
     "dateAdded": "2022-11-10 17:43:32",
-    "price": 340
+    "price": 340.0
   }
 ]
