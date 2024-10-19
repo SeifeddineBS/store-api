@@ -1,4 +1,4 @@
-### Project Name
+### store-api
 `store-api`
 
 ### `README.md`
