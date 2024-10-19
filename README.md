@@ -1,9 +1,3 @@
-### store-api
-`store-api`
-
-### `README.md`
----
-
 # Store API
 
 This is a simple Web API built using **Node.js**, **Express.js**, and **TypeScript** for managing users and purchases in a store. The API allows you to create users and retrieve purchase information. The application simulates a database using JSON files for storing user and purchase data.
